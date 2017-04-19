@@ -15,20 +15,17 @@
 
         //  Build a data transfer object representing the incident record to be sent as JSON to PubNub
         var DTOIncident = {
-            'sys_id': current.getValue('sys_id'),
-            'number': current.getValue('number'),
-            'caller_id': current.getDisplayValue('caller_id'),
-            'active': current.getValue('active'),
-            'state': current.getDisplayValue('state'),
+            'assigned_to': current.getDisplayValue('assigned_to'),   
             'category': current.getValue('category'),
-            'subcategory': current.getValue('subcategory'),
-            'assignment_group': current.getDisplayValue('assignment_group'),
-            'assigned_to': current.getDisplayValue('assigned_to'),
-            'priority': current.getDisplayValue('priority'),
-            'updated_on': current.getValue('sys_updated_on'),
-            'updated_by': current.getValue('sys_updated_by'),
             'created_on': current.getValue('sys_created_on'),
-            'created_by': current.getValue('sys_created_by')
+            'number': current.getValue('number'),
+            'priority': current.getDisplayValue('priority'),
+            'state': current.getDisplayValue('state'),
+            'sys_id': current.getValue('sys_id'),
+            'updated_by': current.getValue('sys_updated_by'),
+            'updated_on': current.getValue('sys_updated_on'),
+            'caller_id': current.getDisplayValue('caller_id'),
+            'active': current.getValue('active')
         };
 
         //  Convert DTO to JSON string
