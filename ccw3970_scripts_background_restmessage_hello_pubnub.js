@@ -1,16 +1,19 @@
 /*
- Make HTTP Request using RESTMessageV2
+ Advanced Business Rule Script to publish message to PubNub Service Using RESTMessageV2 API to issue HTTP Request
  */
-(function executeRule() {
+(function executeBusinessRule() {
     try {
+
+        var instanceName = gs.getProperty('instance_name');
+        var instanceId = gs.getProperty('instance_id');
         var req = new sn_ws.RESTMessageV2('PubNub', 'Publish Message');
         req.setStringParameterNoEscape('pub_key', 'pub-c-11b9ede6-f9ee-4da8-a829-944a45f29eb8');
-        req.setStringParameterNoEscape('client', gs.getProperty('instance_name') + '-' + gs.getProperty('instance_id'));
+        req.setStringParameterNoEscape('client', instanceName + '-' + instanceId );
         req.setStringParameterNoEscape('sub_key', 'sub-c-dafe9b8c-1ae1-11e7-bc52-02ee2ddab7fe');
-        req.setStringParameterNoEscape('channel', 'CCW3970-'+gs.getProperty('instance_name'));
+        req.setStringParameterNoEscape('channel', 'CCW3970_' + instanceName);
 
 
-        var body = '{"message":"hello PubNub"}';
+        var body = '{"message":"hello PubNub from CCW3970 Lab Instance" + }';
         req.setRequestBody(body);
 
 
@@ -19,7 +22,7 @@
         var httpStatus = res.getStatusCode();
         gs.debug(httpStatus);
     }
-    catch (ex) {
+    catch(ex) {
         var message = ex.getMessage();
         gs.debug(message);
     }
