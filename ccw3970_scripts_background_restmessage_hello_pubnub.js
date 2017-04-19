@@ -13,7 +13,7 @@
         req.setStringParameterNoEscape('channel', 'CCW3970_' + instanceName);
 
 
-        var body = '{"message":"hello PubNub from CCW3970 Lab Instance" + }';
+        var body = '{"message":"hello PubNub from CCW3970 Lab Instance '+ instanceName +'"}';
         req.setRequestBody(body);
 
 
