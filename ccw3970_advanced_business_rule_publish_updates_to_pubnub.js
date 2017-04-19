@@ -4,7 +4,6 @@
  */
 (function executeBusinessRule() {
     try {
-
         var instanceName = gs.getProperty('instance_name');
         var instanceId = gs.getProperty('instance_id');
         var req = new sn_ws.RESTMessageV2('PubNub', 'Publish Message');
