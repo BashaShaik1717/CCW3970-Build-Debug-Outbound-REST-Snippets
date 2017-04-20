@@ -1,7 +1,7 @@
 /*
- Advanced Business Rule Script to publish message to PubNub Service Using RESTMessageV2 API to issue HTTP Request
+ Background Script to publish message to PubNub Service Using RESTMessageV2 API to issue HTTP Request
  */
-(function executeBusinessRule() {
+(function executeScript() {
     try {
 
         var instanceName = gs.getProperty('instance_name');
