@@ -5,10 +5,9 @@
 (function executeBusinessRule() {
     try {
         var instanceName = gs.getProperty('instance_name');
-        var instanceId = gs.getProperty('instance_id');
         var req = new sn_ws.RESTMessageV2('PubNub', 'Publish Message');
         req.setStringParameterNoEscape('pub_key', 'pub-c-11b9ede6-f9ee-4da8-a829-944a45f29eb8');
-        req.setStringParameterNoEscape('client', instanceName + '-' + instanceId );
+        req.setStringParameterNoEscape('client', instanceName);
         req.setStringParameterNoEscape('sub_key', 'sub-c-dafe9b8c-1ae1-11e7-bc52-02ee2ddab7fe');
         req.setStringParameterNoEscape('channel', 'CCW3970_' + instanceName);
 
