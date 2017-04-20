@@ -1,0 +1,13 @@
+{
+  "active": "${int_active}",
+  "assigned_to": "${int_assigned_to}",
+  "caller_id": ${int_caller_id}",
+  "category": "${int_category}",
+  "created_on": "${int_sys_created_on}",
+  "number": "${int_number}",
+  "priority": "${int_priority}",
+  "state": "${int_state}",
+  "sys_id": "${int_sys_id}",
+  "updated_by": "${int_sys_updated_by}",
+  "updated_on": "${int_sys_updated_on}"
+}
