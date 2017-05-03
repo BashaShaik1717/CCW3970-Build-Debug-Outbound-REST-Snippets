@@ -1,7 +1,7 @@
 {
   "active": "${int_active}",
   "assigned_to": "${int_assigned_to}",
-  "caller_id": ${int_caller_id}",
+  "caller_id": "${int_caller_id}",
   "category": "${int_category}",
   "created_on": "${int_sys_created_on}",
   "number": "${int_number}",
