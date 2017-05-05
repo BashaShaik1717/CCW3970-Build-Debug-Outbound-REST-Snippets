@@ -2,14 +2,39 @@ General
 ################################################################################
 Lab instance: http://clabs.link/ccw3970
 
+
+
 Lab Setup
 ################################################################################
+Get Postman: https://www.getpostman.com
+
+GitHub login: https://github.com/login
+
+GitHub repo (fork): https://github.com/CreatorCon17/CCW3970-Build-Debug-Outbound-REST-App
+
+
 
 Lab 1
 ################################################################################
+PubNub Documentation: https://www.pubnub.com/docs/pubnub-rest-api-documentation#publish-subscribe-publish-v1- via-post-post
+
+Postman collection: https://www.getpostman.com/collections/25a87e008d055aec5496
+
+
 
 Lab 2
 ################################################################################
+Business rule 'hello' snippet: https://raw.githubusercontent.com/CreatorCon17/CCW3970-Build-Debug-Outbound-REST-Snippets/master/ccw3970_scripts_background_restmessage_hello_pubnub.js
+
+Glitch app: https://ccw3970-demo.glitch.me/
+
+Business rule 'advanced' snippet: https://raw.githubusercontent.com/CreatorCon17/CCW3970-Build-Debug-Outbound-REST-Snippets/master/ccw3970_advanced_business_rule_publish_updates_to_pubnub.js
+
+
 
 Lab 3
 ################################################################################
+REST Message JSON payload: https://raw.githubusercontent.com/CreatorCon17/CCW3970-Build-Debug-Outbound-REST-Snippets/master/ccw3970_restmessage_content_body.json
+
+REST Activity 'current' inputs: https://raw.githubusercontent.com/CreatorCon17/CCW3970-Build-Debug-Outbound-REST-Snippets/master/ccw3970_rest_activity_current_inputs.txt
+
