@@ -32,7 +32,7 @@ https://github.com/CreatorCon17/CCW3970-Build-Debug-Outbound-REST-App
 Lab 1
 ################################################################################
 PubNub Documentation:
-https://www.pubnub.com/docs/pubnub-rest-api-documentation#publish-subscribe-publish-v1- via-post-post
+https://www.pubnub.com/docs/pubnub-rest-api-documentation#publish-subscribe-publish-v1-via-post-post
 
 Postman collection:
 https://www.getpostman.com/collections/25a87e008d055aec5496
